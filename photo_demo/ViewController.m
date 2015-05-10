@@ -111,4 +111,29 @@
     
     [UIView commitAnimations];
 }
+
+- (IBAction)switch_valueChange:(UISwitch *)sender {
+    
+    if(sender.isOn)
+    {
+        self.view.backgroundColor = [UIColor  blackColor];
+        
+        _viewDown.backgroundColor =self.view.backgroundColor;
+        
+    }else{
+    
+        self.view.backgroundColor = [UIColor  whiteColor];
+        
+        _viewDown.backgroundColor = [UIColor greenColor];
+        
+    }
+    
+}
+
+- (IBAction)zoom_slider:(UISlider *)sender {
+    
+    float f = sender.value;
+    
+    _imagePic.transform = CGAffineTransformMakeScale(f, f);
+}
 @end

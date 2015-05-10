@@ -25,5 +25,9 @@
 
 - (IBAction)onClick:(UIButton *)sender;
 
+- (IBAction)switch_valueChange:(UISwitch *)sender;
+
+- (IBAction)zoom_slider:(UISlider *)sender;
+
 @end
 
